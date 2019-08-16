@@ -11,14 +11,13 @@ include("include/db.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/checkbox.css">
-    <link rel="stylesheet" href="css/button.css">
-    <script src="./jquery-3.4.0.slim.min.js"></script>
-    <script src="./bootstrap.js"></script>
-    <script src="./popper.min.js"></script>
-    <script src="./tooltip.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/floatButton.css">
+    <script src="./js/jquery-3.4.0.slim.min.js"></script>
+    <script src="./css/bootstrap.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/tooltip.min.js"></script>
 
     <title>Add Expense</title>
 </head>
@@ -91,11 +90,6 @@ include("include/db.php");
 <!-- /.container -->
 <!-- database connectivity -->
 <?php
-include("./include/db.php");
-
-//check karna
-session_start();
-
 //for validation taking the array
 $output = ''; //already existing in database
 $invalidusn = '';
